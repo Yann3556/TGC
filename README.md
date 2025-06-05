@@ -41,8 +41,9 @@ Lancez PostgreSQL via l'exécutable PostgreSQL - Start
 
 Cela activera le serveur PostgreSQL en local
 
+Telecharger les fichiers
 Lancer les scripts
-Une fois PostgreSQL activé, vous pouvez exécuter les fichiers dans cet ordre :
+Une fois PostgreSQL activé, vous pouvez exécuter dans le terminal les fichiers dans cet ordre :
 python extraction.py
 python nettoyage.py
 python transfere_bdd.py
