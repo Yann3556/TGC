@@ -41,6 +41,16 @@ Lancez PostgreSQL via l'exécutable PostgreSQL - Start
 
 Cela activera le serveur PostgreSQL en local
 
+Téléchargez tous les fichiers suivants et placez-les dans le même répertoire (dossier) sur votre machine locale ou votre environnement de développement :
+
+00_create_wrk_tables.sql
+01_dwh_cards.sql
+02_create_players_matchs.sql
+Dash.py
+extraction.py
+nettoyage.py
+transfere_bdd.py
+
 Lancer les scripts
 Une fois PostgreSQL activé, vous pouvez exécuter les fichiers dans cet ordre :
 python extraction.py
