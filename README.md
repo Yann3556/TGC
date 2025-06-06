@@ -2,37 +2,25 @@
 Structure de notre code
 Notre projet est organisé en quatre fichiers principaux :
 
+`extraction.py` -> Ce fichier permet de récupérer l’ensemble des données nécessaires, notamment via du **scraping**.  
+Les données collectées sont ensuite enregistrées dans un dossier `output`, situé au même niveau que le fichier `extraction.py`.
 
-extraction.py
-Ce fichier permet de récupérer l’ensemble des données nécessaires, notamment via du scraping.
-Les données collectées sont ensuite enregistrées dans un dossier output, situé au même niveau que le fichier extraction.py.
-Structure du projet
-
-transfere_bdd.py ATTENTION chemin de données a changer
+`transfere_bdd.py` : 
+ATTENTION chemin de données à changer
 Ce script anonymise les joueurs en leur attribuant un identifiant unique.
 Il se charge également de charger les données dans une base PostgreSQL pour les rendre exploitables dans l’application.
 Notre projet est organisé autour de **quatre scripts principaux** :
 
-nettoyage.py
-Ce fichier effectue des transformations sur les données brutes :
-création de nouvelles colonnes, normalisation, restructuration des formats, suppression des doublons, etc.
-
-`extraction.py`
-Ce fichier permet de récupérer l’ensemble des données nécessaires, notamment via du **scraping**.  
-Les données collectées sont ensuite enregistrées dans un dossier `output`, situé au même niveau que le fichier `extraction.py`.
-
-dash.py
-Ce fichier lance l'application Dash qui permet de visualiser les données de manière interactive.
-L’utilisateur peut explorer les tournois, les decks, les joueurs et les cartes à travers plusieurs onglets dynamiques.
-
-`nettoyage.py`
-Ce script effectue des **transformations sur les données brutes** :  
+`nettoyage.py` -> Ce script effectue des **transformations sur les données brutes** :  
 - Création de nouvelles colonnes  
 - Normalisation  
 - Restructuration des formats  
 - Suppression des doublons
 
-`requements.txt`
+`dash.py` -> Ce fichier lance l'application Dash qui permet de visualiser les données de manière interactive.
+L’utilisateur peut explorer les tournois, les decks, les joueurs et les cartes à travers plusieurs onglets dynamiques.
+
+`requirements.txt`
 Ce fichier permet d'installer les bibliotheqes python avant l'excution des fichiers Python.
 
 `transfere_bdd.py`
@@ -59,13 +47,13 @@ La structure des tables PostgreSQL est définie dans les fichiers suivants :
 
 ---
 
-01_dwh_cards.py
+
 ## 🚀 Lancement du projet
 
-02_create_players_matchs.py
 Pour exécuter l’application, vous devez disposer d’une **instance PostgreSQL fonctionnelle**.
 
 Ces fichiers doivent impérativement se trouver dans le même répertoire que le fichier transfere_bdd.py pour garantir leur bon fonctionnement lors du chargement des données.
+
 ### 🔧 Installation de PostgreSQL (portable)
 
 Lancement du projet
@@ -84,6 +72,7 @@ Une fois le téléchargement effectué :
 ---
 
 Lancez PostgreSQL via l'exécutable PostgreSQL - Start
+
 ## ▶️ Exécution des scripts
 
 Cela activera le serveur PostgreSQL en local
@@ -94,8 +83,8 @@ Une fois PostgreSQL activé, vous pouvez exécuter les fichiers dans cet ordre :
 ```bash
 pip install -r requirements.txt
 python extraction.py
+python transfere_bdd.py "modifier le chemin pour pointer vers le fichier output afin de récupérer les données pour les transférer sur Postgrès (ligne 17 du code)"
 python nettoyage.py
-python transfere_bdd.py
 python dash.py
 ```
 
