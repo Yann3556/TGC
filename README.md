@@ -94,12 +94,10 @@ Une fois PostgreSQL activé, vous pouvez exécuter les fichiers dans cet ordre :
 ```bash
 pip install -r requirements.txt
 python extraction.py
-python nettoyage.py
 python transfere_bdd.py
+python nettoyage.py
 python dash.py
 ```
 
 L'application Dash sera ensuite accessible dans votre navigateur à l’adresse indiquée dans le terminal (généralement http://127.0.0.1:8050).
-L’application Dash sera ensuite accessible dans votre navigateur à l’adresse indiquée dans le terminal, généralement :  
-`http://127.0.0.1:8050`
-Footer
+
