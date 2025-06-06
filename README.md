@@ -3,7 +3,7 @@ Structure de notre code
 Notre projet est organisé en quatre fichiers principaux :
 
 `extraction.py` -> Ce fichier permet de récupérer l’ensemble des données nécessaires, notamment via du **scraping**.  
-Les données collectées sont ensuite enregistrées dans un dossier `output`, situé au même niveau que le fichier `extraction.py`.
+Les données collectées sont ensuite enregistrées dans un dossier `output`, situé au même niveau que le fichier "extraction.py".
 
 `transfere_bdd.py` : 
 ATTENTION chemin de données à changer
