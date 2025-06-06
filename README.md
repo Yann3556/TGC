@@ -100,6 +100,4 @@ python dash.py
 ```
 
 L'application Dash sera ensuite accessible dans votre navigateur à l’adresse indiquée dans le terminal (généralement http://127.0.0.1:8050).
-L’application Dash sera ensuite accessible dans votre navigateur à l’adresse indiquée dans le terminal, généralement :  
-`http://127.0.0.1:8050`
-Footer
+
