@@ -23,14 +23,6 @@ L’utilisateur peut explorer les tournois, les decks, les joueurs et les cartes
 `requirements.txt`
 Ce fichier permet d'installer les bibliotheqes python avant l'excution des fichiers Python.
 
-`transfere_bdd.py`
-Ce script **anonymise les joueurs** en leur attribuant un identifiant unique.  
-Il permet également de **charger les données** transformées dans une **base de données PostgreSQL** pour qu'elles soient exploitables par l’application.
-
-`dash.py`
-Ce script lance une application **Dash interactive**.  
-L’utilisateur peut visualiser les données à travers plusieurs onglets dynamiques (tournois, decks, joueurs, cartes, etc.).
-
 ---
 
 Structure des tables
