@@ -1,0 +1,10 @@
+aiohttp
+aiofile
+beautifulsoup4
+nest_asyncio
+pandas
+psycopg2-binary
+thefuzz
+dash
+dash-bootstrap-components
+plotly
