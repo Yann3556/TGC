@@ -5,7 +5,7 @@ extraction.py
 Ce fichier permet de récupérer l’ensemble des données nécessaires, notamment via du scraping.
 Les données collectées sont ensuite enregistrées dans un dossier output, situé au même niveau que le fichier extraction.py.
 
-transfere_bdd.py
+transfere_bdd.py Attention a bien modifié le chemin
 Ce script anonymise les joueurs en leur attribuant un identifiant unique.
 Il se charge également de charger les données dans une base PostgreSQL pour les rendre exploitables dans l’application.
 
